@@ -12,7 +12,7 @@ Upon visiting the webpage (submitting requests to the webserver),
 The collection (formatted in JSON) is parsed and rendered on the screen.
 The user can see basic information about the links and click them.
 
-[[/imgs/overview.png]]
+[[imgs/overview.png]]
 
 While on the webpage, a user can also submit new links by clicking the "Submit" button.
 Once clicked, a form will be rendered where the submitter can enter some details about the link.
@@ -23,9 +23,9 @@ Upon completion, there is some basic validation on the input data;
 Regarding the form,
     there is some basic client-side feedback (success/failure of adding a new link, mandatory fields).
 
-[[/imgs/form.png]]
+[[imgs/form.png]]
 
-[[/imgs/feedback.png]]
+[[imgs/feedback.png]]
 
 The webserver (built with Node.js) is responsible for handling requests from clients such as
     serving up web pages ("views") and sending/receiving information about news links.
