@@ -1,0 +1,27 @@
+{
+  "name": "social-news-app",
+  "version": "1.0.0",
+  "description": "A social news web application, inspired by [The Javascript Way](https://github.com/bpesquet/thejsway).",
+  "main": "client.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "multer": "^1.3.0",
+    "webpack": "^3.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/traviswp/social-news-webapp.git"
+  },
+  "keywords": [],
+  "author": "travis <traviswp@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/traviswp/social-news-webapp/issues"
+  },
+  "homepage": "https://github.com/traviswp/social-news-webapp#readme"
+}
