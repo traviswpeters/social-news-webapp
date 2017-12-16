@@ -48,11 +48,6 @@ app.use(express.static("public"));
 
 // Return a string for requests to the root URL ("/")
 app.get("/", (request, response) => {
-    console.log(request.connection.remoteAddress);
-    console.log(request.connection.remotePort);
-    console.log(request.connection.localAddress);
-    console.log(request.connection.localPort);
-
     response.sendFile(`${__dirname}/views/index.html`);
 });
 
