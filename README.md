@@ -1,6 +1,6 @@
 # Social News Web App
 
-***[LIVE VERSION - SOCIAL NEWS WEB APP ON HEROKU](https://social-news-webapp-toy.herokuapp.com/)***
+***[=> LIVE VERSION - SOCIAL NEWS WEB APP ON HEROKU](https://social-news-webapp-toy.herokuapp.com/)***
 
 In my quest to learn more about Javascript I stumbled on an open source book: [The Javascript Way](https://github.com/bpesquet/thejsway).
 The book itself is quite nice and covers a variety of beginner and more advanced topics.
