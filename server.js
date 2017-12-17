@@ -48,6 +48,7 @@ app.use(express.static("public"));
 
 // Return a string for requests to the root URL ("/")
 app.get("/", (request, response) => {
+    console.log("fetch home page");
     response.sendFile(`${__dirname}/views/index.html`);
 });
 
