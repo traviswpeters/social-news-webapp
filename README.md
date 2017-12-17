@@ -1,5 +1,7 @@
 # Social News Web App
 
+***[LIVE VERSION - SOCIAL NEWS WEB APP ON HEROKU](https://social-news-webapp-toy.herokuapp.com/)***
+
 In my quest to learn more about Javascript I stumbled on an open source book: [The Javascript Way](https://github.com/bpesquet/thejsway).
 The book itself is quite nice and covers a variety of beginner and more advanced topics.
 Each major part of the book (there are currently three parts) has readers build a project.
@@ -148,6 +150,42 @@ module.exports = {
 };
 ```
 
+## Deploying to heroku
+
+Create an app on Heroku:
+
+```bash
+heroku create
+```
+
+According to Heroku's website
+
+> When you create an app, a git remote (called heroku) is also created and associated with your local git repository.
+
+Therefore, to deploy your app, push your code to the heroku remote, then check out the app:
+
+```bash
+git push heroku master
+heroku open
+```
+
+If you make changes locally at any point, following these steps to re-deploy with your updates.
+
+```bash
+                                    # 0. make your desired changes
+$(npm bin)/webpack                  # 1. since we use webpack, remember to update bundle.js with any changes to, e.g., client.js
+git add ...[local changes]...
+git commit -m "my commit message"   # 2. commit your changes
+git push heroku master              # 3. push changes to the heroku remote
+heroku open                         # 4. open your re-deployed app!
+```
+
+If you suspect any issues, check out the logs:
+
+```bash
+heroku logs --tail
+```
+
 ## Future work
 
 There are a number of things that would be fun to explore further.
@@ -178,4 +216,4 @@ Currently the only validation that is done on new links that are submitted
 If not, then a default "http://" is added as a prefix.
 It would be interesting, for example, to add an async call to check the page in the background
     and project client-side feedback before trying to submit the link.
-Maybe some other stuff too? We'll see. 
+Maybe some other stuff too? We'll see.
