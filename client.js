@@ -8,6 +8,9 @@ const linkList = require("./linklist.js");
 // Example: linkList.links;
 // Example: linkList.add(newLink);
 
+// const HOST = 'http://localhost:3000';
+const HOST = 'https://social-news-webapp-toy.herokuapp.com';
+
 ////////////////////////////////////////////////////////////////////////////////
 // UPDATE //////////////////////////////////////////////////////////////////////
 
@@ -63,7 +66,7 @@ submitButton.addEventListener("click", e => {
         formData.append("url", link.url);
 
         // Send form data to the server with an asynchronous POST request
-        fetch("http://localhost:3000/api/link", {
+        fetch(`${HOST}/api/link`)
             method: "POST",
             body: formData
         })
@@ -144,7 +147,7 @@ var view = {
  */
  var offlinemode = false;
 
-fetch("http://localhost:3000/api/news")
+fetch(`${HOST}/api/news`)
     .then(response => response.json()) // Translate JSON into JavaScript
     .then(links => {
         console.log("online mode");
