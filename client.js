@@ -145,30 +145,30 @@ var view = {
 /*
  * Try to fetch current news from our webserver API (works only if our webserver is "up")
  */
- var offlinemode = false;
-
-fetch(`${HOST}/api/news`)
-    .then(response => response.json()) // Translate JSON into JavaScript
-    .then(links => {
-        console.log("online mode");
-        console.log(links);
-        links.forEach(link => {
-            linkList.addLink(new Link(link.title, link.url, link.author));
-            view.displayLinks();
-        });
-    })
-    .catch(err => {
-        // Webserver is most likely down.
-        // Add a few default Links (works even if our webserver is not "up")
-        console.log("offline mode");
-        offlinemode = true;
-        document.getElementById('content').insertAdjacentHTML("afterend", "<center><i>webserver not available - offline mode</i></center>");
-
-        linkList.addLink(new Link("Wikipedia", "http://wikipedia.org", "Sophie"));
-        linkList.addLink(new Link("Hacker News", "https://news.ycombinator.com", "Baptiste"));
-        linkList.addLink(new Link("Reddit", "https://reddit.com", "Thomas"));
-        linkList.addLink(new Link("Boing Boing", "https://boingboing.net", "Daniel"));
-        view.displayLinks();
-
-        // console.error(`ERROR: ${err.message}`);
-    });
+//  var offlinemode = false;
+//
+// fetch(`${HOST}/api/news`)
+//     .then(response => response.json()) // Translate JSON into JavaScript
+//     .then(links => {
+//         console.log("online mode");
+//         console.log(links);
+//         links.forEach(link => {
+//             linkList.addLink(new Link(link.title, link.url, link.author));
+//             view.displayLinks();
+//         });
+//     })
+//     .catch(err => {
+//         // Webserver is most likely down.
+//         // Add a few default Links (works even if our webserver is not "up")
+//         console.log("offline mode");
+//         offlinemode = true;
+//         document.getElementById('content').insertAdjacentHTML("afterend", "<center><i>webserver not available - offline mode</i></center>");
+//
+//         linkList.addLink(new Link("Wikipedia", "http://wikipedia.org", "Sophie"));
+//         linkList.addLink(new Link("Hacker News", "https://news.ycombinator.com", "Baptiste"));
+//         linkList.addLink(new Link("Reddit", "https://reddit.com", "Thomas"));
+//         linkList.addLink(new Link("Boing Boing", "https://boingboing.net", "Daniel"));
+//         view.displayLinks();
+//
+//         // console.error(`ERROR: ${err.message}`);
+//     });
