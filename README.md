@@ -106,8 +106,7 @@ Specifically, these files contain class definitions and data structures for
     standardizing how the web app stores "Link" objects and maintains a collection of these objects.
 Unfortunately, sharing is not as straightforward as one would hope.
 
-I'll spare the gorey details and suffice it to say that [webpack](https://webpack.js.org/) is one tool that can help us here.
-Since you have npm installed, you can get webpack easily:
+I'll spare the gorey details and suffice it to say that [webpack](https://webpack.js.org/) is one tool that can help us here. Webpack should be installed automatically when you run `npm install` (it is listed as a dev dependency in the `package.json` file) - if you need it though, you can install it easily with `npm`:
 
 ```javascript
 npm install webpack
