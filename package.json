@@ -4,7 +4,7 @@
   "description": "A social news web application, inspired by [The Javascript Way](https://github.com/bpesquet/thejsway).",
   "main": "client.js",
   "dependencies": {
-    "express": "^4.16.2",
+    "express": "^4.18.2",
     "multer": "^1.3.0"
   },
   "devDependencies": {
